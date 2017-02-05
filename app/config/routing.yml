@@ -1,0 +1,7 @@
+ancarebeca_fullcalendar:
+    resource: "@FullCalendarBundle/Resources/config/routing.yml"
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+

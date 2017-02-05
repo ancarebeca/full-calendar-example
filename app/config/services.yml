@@ -1,0 +1,5 @@
+services:
+    app_bundle.service.listener:
+        class: AppBundle\EventListener\LoadDataListener
+        tags:
+            - { name: 'kernel.event_listener', event: 'fullcalendar.set_data', method: loadData }
