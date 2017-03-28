@@ -4,14 +4,14 @@ namespace AppBundle\EventListener;
 
 use AncaRebeca\FullCalendarBundle\Event\CalendarEvent;
 use AncaRebeca\FullCalendarBundle\Model\Event;
-use AncaRebeca\FullCalendarBundle\Model\EventInterface;
+use AncaRebeca\FullCalendarBundle\Model\FullCalendarEvent;
 
 class LoadDataListener
 {
     /**
      * @param CalendarEvent $calendarEvent
      *
-     * @return EventInterface[]
+     * @return FullCalendarEvent[]
      */
     public function loadData(CalendarEvent $calendarEvent)
     {
