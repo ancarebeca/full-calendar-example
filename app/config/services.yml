@@ -1,5 +1,6 @@
 services:
     app_bundle.service.listener:
         class: AppBundle\EventListener\LoadDataListener
+        arguments: [ "@doctrine.orm.entity_manager" ]
         tags:
             - { name: 'kernel.event_listener', event: 'fullcalendar.set_data', method: loadData }
